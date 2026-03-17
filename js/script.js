@@ -223,21 +223,6 @@ const projects = [
             { img: "Gandara/Bedroom1.jpg", label: "Bedroom 1" },
             { img: "Gandara/Walkin Closet.jpg", label: "Walkin Closet" }
         ]
-    },
-    {
-        title: "Hamorawon Studio",
-        type: "Residential",
-        year: 2024,
-        img: "PERSPECTIVE 2/PERSPECTIVE 2/Caranzo.jpg",
-        desc: "Industrial-chic office interior finishing.",
-        interiors: [
-            { img: "Amampacang Jordan/LIVING AREA.jpg", label: "Living Room" },
-            { img: "Amampacang Jordan/KITCHEN AREA.jpg", label: "Kitchen" },
-            { img: "Amampacang Jordan/DINING AREA.jpg", label: "Dining Area" },
-            { img: "Amampacang Jordan/BEDROOM1.jpg", label: "Bedroom 1" },
-            { img: "Amampacang Jordan/BEDROOM2.jpg", label: "Bedroom 2" },
-            { img: "Amampacang Jordan/TYPICAL T&B.jpg", label: "Toilet & Bath" }
-        ]
     }
 ];
 
