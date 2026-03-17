@@ -144,7 +144,7 @@
         background: #030712;
         border-top: 1px solid rgba(255,255,255,0.07);
         padding: 0;
-        z-index: 9999;
+        z-index: 99999;
         flex-direction: row !important;
         overflow-x: auto;
         overflow-y: hidden;
