@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemasuto Builders | Quality Construction</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/jpg" href="hemasutologo.jpg">
+</head>
+<body class="bg-white font-sans text-slate-900">
+
+<!-- ═══════ LOADING SCREEN — Option 2 ═══════ -->
+<div id="loadingScreen">
+    <div class="load-topbar"></div>
+    <div class="load-grid"></div>
+    <div class="load-logo-wrap">
+        <img src="hemasutologo.jpg" alt="Hemasuto Builders" class="load-logo">
+    </div>
+    <h1 class="load-title"><span class="load-red">HEMASUTO</span> BUILDERS</h1>
+    <p class="load-tagline">"Your Dream House, We Build..."</p>
+    <div class="load-bar-wrap">
+        <div class="load-bar"></div>
+    </div>
+    <p class="load-sub">Est. 1995 · Calbayog City, Western Samar</p>
+</div>
+
+<!-- ═══════ HEADER ═══════ -->
+<header class="flex justify-between items-center p-4 bg-gray-950 text-white sticky top-0 z-50 shadow-xl">
+    <div class="logo">
+        <a href="#"><img src="hemasutologo.jpg" class="w-[60px] h-[60px]" alt="Hemasuto Builders logo"></a>
+    </div>
+    <button onclick="toggleMobileMenu()" class="md:hidden text-white p-2">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+    <nav class="main-nav hidden md:flex items-center">
+        <ul class="flex items-center gap-6 font-semibold uppercase text-sm tracking-widest">
+            <li><a href="#" class="text-white hover:text-red-500 transition">Home</a></li>
+            <li><a href="#journey" class="text-white hover:text-red-500 transition">About</a></li>
+            <li><a href="#services" class="text-white hover:text-red-500 transition">Services</a></li>
+            <li><a href="#projects" class="text-white hover:text-red-500 transition">Projects</a></li>
+            <li><a href="#contact-section" class="text-white hover:text-red-500 transition">Contact</a></li>
+            <li class="ml-6">
+                <a href="#inquiry" class="border-2 border-red-600 text-white px-5 py-2 rounded-full hover:bg-red-600 transition-all duration-300 font-bold tracking-widest whitespace-nowrap">
+                    Get a Quote
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<!-- ═══════ HERO ═══════ -->
+<section id="home" class="relative bg-[url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1920&auto=format&fit=crop')] bg-cover bg-center bg-no-repeat bg-gray-700 bg-blend-multiply py-40 px-6 text-center text-white">
+    <div class="max-w-4xl mx-auto flex flex-col items-center">
+        <p class="animate-hero text-xl text-gray-200 mb-4 tracking-widest uppercase" style="animation-delay:0.2s">Mabuhay!</p>
+        <h1 class="animate-hero text-5xl md:text-7xl font-extrabold tracking-tighter mb-2" style="animation-delay:0.4s">Welcome to</h1>
+        <h2 class="animate-hero text-5xl md:text-7xl font-extrabold tracking-tighter mb-8 text-red-600" style="animation-delay:0.6s">Hemasuto Builders!</h2>
+        <div class="animate-hero w-24 h-1 bg-white mb-8" style="animation-delay:0.7s"></div>
+        <p class="animate-hero text-lg md:text-2xl text-gray-200 mb-10 max-w-2xl font-light italic" style="animation-delay:0.8s">"Your Dream House, We Build."</p>
+        <a href="https://m.me/hemasutobuilderscalbayog" target="_blank" class="animate-hero bg-red-700 hover:bg-red-800 text-white px-10 py-4 rounded-full font-bold uppercase tracking-widest transition transform hover:scale-105 shadow-2xl" style="animation-delay:1s">Start Your Project</a>
+    </div>
+</section>
+
+<!-- ═══════ ABOUT ═══════ -->
+<section id="journey" class="bg-slate-950 text-white py-28 px-6 overflow-hidden">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+        <div class="reveal-left space-y-8">
+            <div class="inline-block px-4 py-1 border border-red-700 text-red-500 text-xs font-bold uppercase tracking-widest rounded-full">Established Quality</div>
+            <h2 class="text-4xl md:text-6xl font-extrabold text-slate-100 leading-tight">Our Journey & <span class="text-red-700">Achievements.</span></h2>
+            <p class="text-slate-400 text-lg leading-relaxed">Based in Calbayog City, Hemasuto Builders has redefined the local skyline through a relentless pursuit of excellence. From humble beginnings to leading large-scale residential and commercial developments, our mission remains structural integrity paired with modern aesthetics.</p>
+            <div class="flex gap-10 py-4">
+                <div><span class="block text-4xl font-bold text-white">100+</span><span class="text-xs uppercase text-slate-500 font-bold tracking-widest">Projects Done</span></div>
+                <div><span class="block text-4xl font-bold text-white">20+</span><span class="text-xs uppercase text-slate-500 font-bold tracking-widest">Years Experience</span></div>
+            </div>
+        </div>
+        <div class="reveal-right">
+            <div class="relative rounded-3xl overflow-hidden border border-slate-800 shadow-2xl transform rotate-2 hover:rotate-0 transition-transform duration-500">
+                <img src="hemasutologo.jpg" alt="Achievements" class="w-full h-[450px] object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+            </div>
+        </div>
+        <button onclick="openAboutPopup()" class="px-8 py-3 bg-transparent border-2 border-red-600 text-white font-bold rounded-full transition-all duration-300 hover:bg-red-600 hover:scale-105 active:scale-95 shadow-lg">Learn More</button>
+    </div>
+</section>
+
+<!-- ═══════ SERVICES ═══════ -->
+<section id="services" class="py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-sm font-bold text-red-700 uppercase tracking-[0.3em] mb-4">What We Do</h2>
+            <h3 class="text-4xl md:text-5xl font-black text-slate-900 uppercase">Professional Services</h3>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+            <!-- 1. Residential Construction -->
+            <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all cursor-pointer">
+                <div class="h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=600&q=80"
+                         alt="Residential Construction"
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                </div>
+                <div class="p-8">
+                    <h4 class="text-xl font-bold text-slate-800 uppercase mb-2">Residential Construction</h4>
+                    <p class="text-slate-500 text-sm">From custom homes to modern container houses, we design and build residential spaces that reflect your style and provide lasting comfort.</p>
+                </div>
+            </div>
+
+            <!-- 2. Commercial Construction -->
+            <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all cursor-pointer">
+                <div class="h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80"
+                         alt="Commercial Construction"
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                </div>
+                <div class="p-8">
+                    <h4 class="text-xl font-bold text-slate-800 uppercase mb-2">Commercial Construction</h4>
+                    <p class="text-slate-500 text-sm">We specialize in constructing commercial properties, including office buildings, retail spaces, and multi-functional facilities built to enhance your brand presence.</p>
+                </div>
+            </div>
+
+            <!-- 3. Renovations & Remodels -->
+            <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all cursor-pointer">
+                <div class="h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80"
+                         alt="Renovations and Remodels"
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                </div>
+                <div class="p-8">
+                    <h4 class="text-xl font-bold text-slate-800 uppercase mb-2">Renovations & Remodels</h4>
+                    <p class="text-slate-500 text-sm">We offer renovation and remodeling services to transform your existing space into something fresh, functional, and beautiful — for your home or business.</p>
+                </div>
+            </div>
+
+            <!-- 4. Architectural Design & Planning -->
+            <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all cursor-pointer">
+                <div class="h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80"
+                         alt="Architectural Design and Planning"
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                </div>
+                <div class="p-8">
+                    <h4 class="text-xl font-bold text-slate-800 uppercase mb-2">Architectural Design & Planning</h4>
+                    <p class="text-slate-500 text-sm">Our team of skilled architects will work with you to create thoughtful, innovative designs that blend aesthetic appeal with practicality.</p>
+                </div>
+            </div>
+
+            <!-- 5. Project Management -->
+            <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all cursor-pointer">
+                <div class="h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80"
+                         alt="Project Management"
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                </div>
+                <div class="p-8">
+                    <h4 class="text-xl font-bold text-slate-800 uppercase mb-2">Project Management</h4>
+                    <p class="text-slate-500 text-sm">We provide full-service project management, ensuring that each project is completed on time, within budget, and to the highest standards of quality.</p>
+                </div>
+            </div>
+
+            <!-- 6. Plumbing & Electrical Services -->
+            <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all cursor-pointer">
+                <div class="h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80"
+                         alt="Plumbing and Electrical Services"
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                </div>
+                <div class="p-8">
+                    <h4 class="text-xl font-bold text-slate-800 uppercase mb-2">Plumbing & Electrical Services</h4>
+                    <p class="text-slate-500 text-sm">In collaboration with trusted partners like JF Electrical Services, we offer expert plumbing and electrical solutions to ensure your project is fully functional and up to code.</p>
+                </div>
+            </div>
+
+            <!-- 7. Sustainable Building Solutions -->
+            <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all cursor-pointer">
+                <div class="h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80"
+                         alt="Sustainable Building Solutions"
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                </div>
+                <div class="p-8">
+                    <h4 class="text-xl font-bold text-slate-800 uppercase mb-2">Sustainable Building Solutions</h4>
+                    <p class="text-slate-500 text-sm">We embrace eco-friendly building practices, incorporating sustainable materials and energy-efficient designs to reduce environmental impact and lower long-term costs.</p>
+                </div>
+            </div>
+
+            <!-- 8. Custom Construction Solutions -->
+            <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all cursor-pointer">
+                <div class="h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80"
+                         alt="Custom Construction Solutions"
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                </div>
+                <div class="p-8">
+                    <h4 class="text-xl font-bold text-slate-800 uppercase mb-2">Custom Construction Solutions</h4>
+                    <p class="text-slate-500 text-sm">No project is too unique — we specialize in custom construction projects, whether it's a specialized residential structure, innovative housing design, or unique commercial space.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ═══════ PROJECTS ═══════ -->
+<section id="projects" class="py-24 bg-gray-950">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="mb-12 border-l-8 border-red-700 pl-8">
+            <h2 class="text-4xl font-black text-white uppercase">Our Projects</h2>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 bg-gray-50 rounded-[40px] p-6 md:p-10 border border-slate-200">
+            <div class="lg:col-span-7 lg:sticky lg:top-24 h-fit">
+                <div class="relative group">
+                    <div class="aspect-[16/10] bg-slate-200 rounded-[30px] overflow-hidden shadow-2xl">
+                        <img id="mainProjectImg" src="" class="w-full h-full object-cover">
+                    </div>
+                    <button onclick="prevProject()" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 p-4 rounded-full shadow-lg hover:bg-red-700 hover:text-white transition-all">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7"/></svg>
+                    </button>
+                    <button onclick="nextProject()" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 p-4 rounded-full shadow-lg hover:bg-red-700 hover:text-white transition-all">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+                    </button>
+                </div>
+                <div class="mt-8">
+                    <h3 id="projectTitle" class="text-3xl font-black text-slate-900 uppercase italic"></h3>
+                    <p id="projectDesc" class="text-slate-600 text-lg mt-4 leading-relaxed"></p>
+                </div>
+            </div>
+            <div class="lg:col-span-5 bg-white rounded-[30px] p-6 shadow-xl border border-slate-100">
+                <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6 px-2">Project Gallery</h4>
+                <div id="thumbContainer" class="space-y-4 max-h-[500px] overflow-y-auto pr-2 custom-scrollbar"></div>
+            </div>
+        </div>
+        <div class="mt-10 text-center">
+            <button onclick="openGallery()" class="inline-flex items-center gap-4 px-12 py-5 bg-red-700 text-white font-black uppercase tracking-widest rounded-full hover:bg-red-800 transition-all transform hover:scale-105 shadow-2xl">
+                View More Projects
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════ TESTIMONIALS ═══════ -->
+<section id="testimonials" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <p class="text-xs font-bold text-red-700 uppercase tracking-[0.35em] mb-3">What Our Clients Say</p>
+            <h2 class="text-4xl md:text-5xl font-black text-red-600 uppercase font-serif">Client <span class="text-red-600">Testimonials</span></h2>
+            <div class="w-16 h-[3px] bg-red-700 mx-auto mt-4"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            <!-- Card 1 -->
+            <div class="testimonial-card relative bg-[#0f0000] border border-red-900/25 rounded-[20px] p-7 hover:border-red-700 hover:-translate-y-2 transition-all duration-300">
+                <div class="text-red-700 text-5xl leading-none mb-3 opacity-40 font-serif">"</div>
+                <p class="text-slate-400 text-sm leading-relaxed italic mb-6">"Hemasuto Builders built our dream home in Brgy. Bagacay. The quality of work was outstanding — on time, on budget, and exactly what we envisioned. Highly recommended to all Calbayog families!"</p>
+                <div class="flex items-center gap-3 border-t border-red-900/20 pt-5">
+                    <div class="w-12 h-12 rounded-full bg-[#1a0000] border-2 border-red-700 flex items-center justify-center flex-shrink-0 overflow-hidden">
+                        <img src="testimonials/maria.jpg" alt="Maria Santos" class="w-full h-full object-cover" onerror="this.style.display='none'">
+                        <svg class="w-6 h-6" fill="#b91c1c" viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+                    </div>
+                    <div>
+                        <p class="text-white text-xs font-bold uppercase tracking-wide mb-0.5">Maria Santos</p>
+                        <p class="text-slate-600 text-[10px] uppercase tracking-widest">Brgy. Bagacay, Calbayog City</p>
+                        <p class="text-red-700 text-xs mt-1">★★★★★</p>
+                    </div>
+                </div>
+                <div class="absolute top-5 right-5 bg-red-900/10 border border-red-900/20 rounded-md px-2 py-1">
+                    <p class="text-red-700 text-[9px] font-bold uppercase tracking-widest">Verified Client</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="testimonial-card relative bg-[#0f0000] border border-red-900/25 rounded-[20px] p-7 hover:border-red-700 hover:-translate-y-2 transition-all duration-300">
+                <div class="text-red-700 text-5xl leading-none mb-3 opacity-40 font-serif">"</div>
+                <p class="text-slate-400 text-sm leading-relaxed italic mb-6">"We had our old house fully renovated by Sharky and his team. The Italian-inspired design they suggested was beautiful — our neighbors couldn't believe the transformation. Very professional and honest."</p>
+                <div class="flex items-center gap-3 border-t border-red-900/20 pt-5">
+                    <div class="w-12 h-12 rounded-full bg-[#1a0000] border-2 border-red-700 flex items-center justify-center flex-shrink-0 overflow-hidden">
+                        <img src="testimonials/roberto.jpg" alt="Roberto Dela Cruz" class="w-full h-full object-cover" onerror="this.style.display='none'">
+                        <svg class="w-6 h-6" fill="#b91c1c" viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+                    </div>
+                    <div>
+                        <p class="text-white text-xs font-bold uppercase tracking-wide mb-0.5">Roberto Dela Cruz</p>
+                        <p class="text-slate-600 text-[10px] uppercase tracking-widest">Brgy. Hamorawon, Calbayog City</p>
+                        <p class="text-red-700 text-xs mt-1">★★★★★</p>
+                    </div>
+                </div>
+                <div class="absolute top-5 right-5 bg-red-900/10 border border-red-900/20 rounded-md px-2 py-1">
+                    <p class="text-red-700 text-[9px] font-bold uppercase tracking-widest">Verified Client</p>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="testimonial-card relative bg-[#0f0000] border border-red-900/25 rounded-[20px] p-7 hover:border-red-700 hover:-translate-y-2 transition-all duration-300">
+                <div class="text-red-700 text-5xl leading-none mb-3 opacity-40 font-serif">"</div>
+                <p class="text-slate-400 text-sm leading-relaxed italic mb-6">"I hired Hemasuto for interior finishing and I am so impressed. The ceiling design and tile work are world-class. Matibay, maganda, at abot-kaya. Salamat Kuya Sharky!"</p>
+                <div class="flex items-center gap-3 border-t border-red-900/20 pt-5">
+                    <div class="w-12 h-12 rounded-full bg-[#1a0000] border-2 border-red-700 flex items-center justify-center flex-shrink-0 overflow-hidden">
+                        <img src="testimonials/lorna.jpg" alt="Lorna Reyes" class="w-full h-full object-cover" onerror="this.style.display='none'">
+                        <svg class="w-6 h-6" fill="#b91c1c" viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+                    </div>
+                    <div>
+                        <p class="text-white text-xs font-bold uppercase tracking-wide mb-0.5">Lorna Reyes</p>
+                        <p class="text-slate-600 text-[10px] uppercase tracking-widest">Brgy. Bangon, Calbayog City</p>
+                        <p class="text-red-700 text-xs mt-1">★★★★★</p>
+                    </div>
+                </div>
+                <div class="absolute top-5 right-5 bg-red-900/10 border border-red-900/20 rounded-md px-2 py-1">
+                    <p class="text-red-700 text-[9px] font-bold uppercase tracking-widest">Verified Client</p>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="testimonial-card relative bg-[#0f0000] border border-red-900/25 rounded-[20px] p-7 hover:border-red-700 hover:-translate-y-2 transition-all duration-300">
+                <div class="text-red-700 text-5xl leading-none mb-3 opacity-40 font-serif">"</div>
+                <p class="text-slate-400 text-sm leading-relaxed italic mb-6">"From the initial design consultation to the final handover, everything was smooth. The team was respectful, clean, and delivered exactly on schedule. Our two-storey house is now the talk of the neighborhood!"</p>
+                <div class="flex items-center gap-3 border-t border-red-900/20 pt-5">
+                    <div class="w-12 h-12 rounded-full bg-[#1a0000] border-2 border-red-700 flex items-center justify-center flex-shrink-0 overflow-hidden">
+                        <img src="testimonials/jun.jpg" alt="Jun & Maricel Pagador" class="w-full h-full object-cover" onerror="this.style.display='none'">
+                        <svg class="w-6 h-6" fill="#b91c1c" viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+                    </div>
+                    <div>
+                        <p class="text-white text-xs font-bold uppercase tracking-wide mb-0.5">Jun & Maricel Pagador</p>
+                        <p class="text-slate-600 text-[10px] uppercase tracking-widest">Brgy. Amampacang, Calbayog City</p>
+                        <p class="text-red-700 text-xs mt-1">★★★★★</p>
+                    </div>
+                </div>
+                <div class="absolute top-5 right-5 bg-red-900/10 border border-red-900/20 rounded-md px-2 py-1">
+                    <p class="text-red-700 text-[9px] font-bold uppercase tracking-widest">Verified Client</p>
+                </div>
+            </div>
+        </div>
+        <p class="text-center text-slate-700 text-xs uppercase tracking-widest mt-10">100+ Happy Clients · Calbayog City & Surrounding Areas</p>
+    </div>
+</section>
+
+<!-- ═══════ FREE QUOTE / INQUIRY FORM ═══════ -->
+<section id="contact-section" class="py-24 bg-gray-950">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="mb-12 border-l-8 border-red-700 pl-8">
+            <h2 class="text-4xl font-black text-white uppercase">Get In Touch</h2>
+            <p class="text-slate-400 mt-2">Send us an inquiry or reach us directly.</p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+            <!-- LEFT: FREE QUOTE FORM -->
+            <div id="inquiry">
+                <div class="bg-[#120000] border border-red-900 rounded-[24px] overflow-hidden shadow-2xl">
+                    <div class="bg-red-700 px-8 py-6">
+                        <p class="text-red-200 text-xs font-bold uppercase tracking-[0.2em] mb-1">Hemasuto Builders</p>
+                        <h3 class="text-white text-2xl font-black uppercase">Free Project Inquiry</h3>
+                    </div>
+                    <form id="inquiryForm" class="px-8 py-8 space-y-5">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                            <div>
+                                <label class="inquiry-label">Full Name *</label>
+                                <input type="text" name="client_name" id="f_name" placeholder="Juan Dela Cruz" class="inquiry-input" required />
+                            </div>
+                            <div>
+                                <label class="inquiry-label">Contact Number *</label>
+                                <input type="text" name="client_phone" id="f_phone" placeholder="+63 9XX XXX XXXX" class="inquiry-input" required />
+                            </div>
+                        </div>
+                        <div>
+                            <label class="inquiry-label">Email Address (optional)</label>
+                            <input type="email" name="client_email" id="f_email" placeholder="yourname@email.com" class="inquiry-input" />
+                        </div>
+                        <div>
+                            <label class="inquiry-label">Location / Barangay *</label>
+                            <input type="text" name="client_location" id="f_location" placeholder="e.g. Brgy. Bagacay, Calbayog City" class="inquiry-input" required />
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                            <div>
+                                <label class="inquiry-label">Type of Project *</label>
+                                <select name="project_type" id="f_type" class="inquiry-select" required>
+                                    <option value="" disabled selected>Select a project type...</option>
+                                    <option>New house construction</option>
+                                    <option>House renovation / remodel</option>
+                                    <option>Interior finishing</option>
+                                    <option>Room addition / extension</option>
+                                    <option>Commercial project</option>
+                                    <option>Site development</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="inquiry-label">Estimated Budget</label>
+                                <select name="project_budget" id="f_budget" class="inquiry-select">
+                                    <option value="" disabled selected>Select a budget range...</option>
+                                    <option>Below ₱200,000</option>
+                                    <option>₱200,000 – ₱500,000</option>
+                                    <option>₱500,000 – ₱1,000,000</option>
+                                    <option>₱1,000,000 – ₱3,000,000</option>
+                                    <option>₱3,000,000 and above</option>
+                                    <option>Not sure yet</option>
+                                </select>
+                            </div>
+        </div>
+                        <div>
+                            <label class="inquiry-label">Tell us about your project *</label>
+                            <textarea name="project_details" id="f_message" rows="5" placeholder="Describe your project — size, number of floors, special requests, timeline, etc." class="inquiry-textarea" required></textarea>
+                        </div>
+                        <button type="submit" id="submitBtn" class="inquiry-btn">
+                            <span id="btnText">Send Inquiry</span>
+                            <span id="btnLoader" class="hidden">Sending...</span>
+                            <svg id="btnIcon" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                            </svg>
+                        </button>
+                        <div id="formSuccess" class="hidden inquiry-success">
+                            ✅ Your inquiry has been sent! We'll contact you within 24 hours.
+                        </div>
+                        <div id="formError" class="hidden inquiry-error">
+                            ❌ Something went wrong. Please try again or contact us directly.
+                        </div>
+                    </form>
+                </div>
+                <p class="text-slate-500 text-sm mt-4 px-1">
+                    Or message us on
+                    <a href="https://m.me/hemasutobuilderscalbayog" target="_blank" class="text-red-500 hover:text-red-400 font-bold">Facebook Messenger</a>
+                    or call
+                    <a href="tel:+639167193618" class="text-red-500 hover:text-red-400 font-bold">+63 916 7193618</a>
+                </p>
+            </div>
+            <!-- RIGHT: OFFICE INFO -->
+            <div class="lg:sticky lg:top-28">
+                <div class="bg-slate-900 text-white p-10 rounded-[32px] shadow-2xl border border-slate-800">
+                    <h4 class="text-2xl font-black uppercase italic mb-8 pb-4 border-b border-slate-800">Office Info</h4>
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-6">
+                            <div class="w-12 h-12 bg-red-700/10 rounded-full flex items-center justify-center border border-red-700/30 flex-shrink-0">
+                                <svg width="20" height="20" fill="red" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+                            </div>
+                            <span class="text-slate-300 font-medium italic">Calbayog City, Western Samar, PH</span>
+                        </div>
+                        <div class="flex items-center gap-6">
+                            <div class="w-12 h-12 bg-red-700/10 rounded-full flex items-center justify-center border border-red-700/30 flex-shrink-0">
+                                <svg width="20" height="20" fill="red" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.82 3.76 5.14 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                            </div>
+                            <span class="text-slate-300 font-medium italic">+63 (916) 7193618</span>
+                        </div>
+                        <div class="flex items-center gap-6">
+                            <div class="w-12 h-12 bg-red-700/10 rounded-full flex items-center justify-center border border-red-700/30 flex-shrink-0">
+                                <svg width="20" height="20" fill="red" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            </div>
+                            <span class="text-slate-300 font-medium italic">hemasutobuilderscalbayog@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="border-t border-slate-800 my-8"></div>
+                    <h5 class="text-xs font-black uppercase tracking-[0.3em] text-slate-500 mb-6">Official Social Channels</h5>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://facebook.com/hemasutobuilderscalbayog" target="_blank" class="w-14 h-14 flex items-center justify-center rounded-2xl bg-slate-800 hover:bg-[#1877F2] transition-all duration-300 social-icon shadow-lg">
+                            <svg width="26" height="26" fill="white" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/hemasutobuildersofficial/?hl=en" target="_blank" class="w-14 h-14 flex items-center justify-center rounded-2xl bg-slate-800 transition-all duration-300 social-icon shadow-lg insta-hover">
+                            <svg width="26" height="26" fill="white" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.209-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="mailto:hemasutobuilderscalbayog@gmail.com" class="w-14 h-14 flex items-center justify-center rounded-2xl bg-slate-800 hover:bg-red-700 transition-all duration-300 social-icon shadow-lg">
+                            <svg width="26" height="26" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </a>
+                        <a href="viber:09175051816" target="_blank" class="w-14 h-14 flex items-center justify-center rounded-2xl bg-slate-800 hover:bg-[#7360F2] transition-all duration-300 social-icon shadow-lg">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M18.067 14.621c-.482-.163-2.316-1.144-2.677-1.275-.36-.131-.623-.197-.885.197-.263.393-1.018 1.275-1.248 1.537-.229.262-.459.295-.941.033-.483-.262-2.037-.751-3.88-2.395-1.434-1.278-2.402-2.857-2.684-3.348-.282-.491-.03-.757.212-1.001.218-.219.483-.561.724-.842.242-.282.322-.479.483-.799.16-.32.08-.6-.041-.861-.12-.262-1.05-2.528-1.444-3.47-.384-.916-.773-.792-1.05-.806-.271-.014-.582-.017-.893-.017-.311 0-.819.117-1.245.58-.426.463-1.626 1.59-1.626 3.876s1.664 4.493 1.894 4.805c.229.311 3.275 5.002 7.934 7.012 1.108.478 1.973.764 2.648.978 1.112.353 2.126.304 2.926.184.892-.134 2.744-1.121 3.131-2.203.387-1.082.387-2.01.271-2.203-.117-.194-.431-.311-.913-.474zM12 0C5.373 0 0 4.881 0 10.9s4.238 10.9 12 10.9c.96 0 1.884-.08 2.768-.228L19.4 24l-.565-4.496C21.841 17.766 24 14.57 24 10.9 24 4.881 18.627 0 12 0z"/></svg>
+                        </a>
+                    </div>
+                    <div class="mt-8 bg-red-700/10 border border-red-700/30 rounded-2xl p-5">
+                        <p class="text-red-400 text-xs font-bold uppercase tracking-widest mb-2">Response Time</p>
+                        <p class="text-white font-bold text-sm">Within 24 hours</p>
+                        <p class="text-slate-400 text-xs mt-1">Mon – Fri · 8:00 AM – 5:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="bg-slate-950 py-12 text-center text-slate-500 border-t border-slate-900">
+    <p class="uppercase tracking-widest text-xs">© 2026 Hemasuto Builders | Calbayog City</p>
+</footer>
+
+<!-- ═══════════════════════════════════════
+     OVERLAY 1 — FULL GALLERY
+════════════════════════════════════════ -->
+<div id="galleryOverlay">
+    <div class="max-w-7xl mx-auto py-12 px-6">
+        <div class="flex justify-between items-center mb-10 border-b border-slate-800 pb-6">
+            <h2 class="text-3xl font-black text-white uppercase italic">Full <span class="text-red-600">Gallery</span></h2>
+            <button onclick="closeGallery()" class="gallery-close-btn">&times;</button>
+        </div>
+        <!-- Year filter row — auto-generated by JS -->
+<div id="yearFilterRow" class="flex flex-wrap gap-3 mb-4"></div>
+
+<!-- Divider -->
+<div class="w-full h-px bg-slate-800 mb-4"></div>
+
+<!-- Category filter row -->
+<div class="flex flex-wrap gap-3 mb-8">
+    <button onclick="filterGallery('All')"                class="pop-filter-btn active-pop">All</button>
+    <button onclick="filterGallery('Residential')"        class="pop-filter-btn">Residential</button>
+    <button onclick="filterGallery('Commercial')"         class="pop-filter-btn">Commercial</button>
+    <button onclick="filterGallery('Site Development')"   class="pop-filter-btn">Site Development</button>
+    <button onclick="filterGallery('Project Management')" class="pop-filter-btn">Project Management</button>
+</div>
+
+<!-- Gallery grid -->
+<div id="galleryGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4"></div>
+
+<!-- Pagination + results info -->
+<p id="galleryResultsInfo" class="text-center text-slate-500 text-xs uppercase tracking-widest mt-8"></p>
+<div id="galleryPagination" class="flex flex-wrap items-center justify-center gap-2 mt-4 pb-8"></div>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     OVERLAY 2 — PROJECT DETAIL + INTERIORS
+════════════════════════════════════════ -->
+<div id="detailOverlay">
+    <div id="detailBox">
+        <div class="detail-close-row">
+            <button onclick="closeDetail()" class="detail-close-btn">&times;</button>
+        </div>
+        <img id="detailHero" src="" alt="">
+        <div class="detail-body">
+            <p id="detailCat"></p>
+            <h3 id="detailName"></h3>
+            <p id="detailDesc"></p>
+            <p class="interior-label">🏠 Interior Views — tap to enlarge &amp; swipe</p>
+            <div id="detailInteriors"></div>
+        </div>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     OVERLAY 3 — INTERIOR LIGHTBOX (swipe enabled)
+════════════════════════════════════════ -->
+<div id="lightboxOverlay">
+    <div class="lightbox-topbar">
+        <span id="lightboxCounter" class="lightbox-counter">1 / 1</span>
+        <button onclick="closeLightbox()" class="lightbox-close-btn">&times;</button>
+    </div>
+    <button id="lightboxPrev" onclick="lightboxPrev()" class="lightbox-nav-btn" aria-label="Previous">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7"/></svg>
+    </button>
+    <img id="lightboxImg" src="" alt="">
+    <button id="lightboxNext" onclick="lightboxNext()" class="lightbox-nav-btn" aria-label="Next">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+    </button>
+    <div class="lightbox-bottombar">
+        <span id="lightboxLabel"></span>
+        <span class="lightbox-swipe-hint">← swipe to navigate →</span>
+    </div>
+</div>
+
+<!-- Services image modal -->
+<div id="imageModal">
+    <button onclick="closeModal()" class="modal-close-btn">&times;</button>
+    <img id="modalImg" src="">
+</div>
+
+<!-- ═══════════════════════════════════════
+     ABOUT POPUP — opened by "Learn More"
+════════════════════════════════════════ -->
+<div id="aboutPopup">
+    <button class="about-close-btn" onclick="closeAboutPopup()">&times;</button>
+    <div class="about-inner">
+        <!-- ① BANNER -->
+        <div class="about-banner">
+            <div class="about-banner-grid"></div>
+            <span class="about-banner-tag">Est. 1995 · Calbayog City, Western Samar</span>
+            <h1 class="about-banner-title">Hemasuto Builders</h1>
+            <div class="about-banner-line"></div>
+            <p class="about-banner-tagline">"Your Dream House, We Build."</p>
+        </div>
+        <!-- ② COMPANY PROFILE -->
+        <div class="about-section">
+            <div class="about-section-head">
+                <div class="about-section-bar"></div>
+                <div>
+                    <p class="about-section-label">About Us</p>
+                    <h2 class="about-section-title">Company Profile</h2>
+                </div>
+            </div>
+            <div class="about-info-grid">
+                <div class="about-info-cell"><p class="about-info-label">Company Name</p><p class="about-info-val">Hemasuto Builders</p></div>
+                <div class="about-info-cell"><p class="about-info-label">Founded</p><p class="about-info-val">1995</p></div>
+                <div class="about-info-cell"><p class="about-info-label">Location</p><p class="about-info-val">Calbayog City, Western Samar, PH</p></div>
+                <div class="about-info-cell"><p class="about-info-label">Specialization</p><p class="about-info-val">Residential &amp; Commercial Construction</p></div>
+                <div class="about-info-cell"><p class="about-info-label">Projects Completed</p><p class="about-info-val">100+ Projects</p></div>
+                <div class="about-info-cell"><p class="about-info-label">Years of Experience</p><p class="about-info-val">20+ Years</p></div>
+            </div>
+            <div class="about-text-block">
+                <p class="about-text-label">Mission</p>
+                <p>By 2030 and beyond, HEMASUTO BUILDERS envisions becoming the premier construction company in the region. Driven by a values-oriented and disciplined workforce, we strive to deliver highly competitive projects that elevate home beautification and bring marvelous transformations to traditional living spaces. While firmly established in the city, we are dedicated to setting the gold standard as the finest builder in the entire region.</p>
+            </div>
+            <div class="about-text-block">
+                <p class="about-text-label">Vision</p>
+                <p>To cultivate enduring relationships with our clients through trust and integrity, while redefining the standards of excellence in craftsmanship. We are committed to delivering superior quality and innovative solutions, from the initial concept to the successful completion of every project we undertake.</p>
+            </div>
+        </div>
+        <!-- ③ HISTORY -->
+        <div class="about-section">
+            <div class="about-section-head">
+                <div class="about-section-bar"></div>
+                <div>
+                    <p class="about-section-label">Our Story</p>
+                    <h2 class="about-section-title">History</h2>
+                </div>
+            </div>
+            <div class="about-timeline">
+                <div class="about-tl-item">
+                    <div class="about-tl-dot"></div>
+                    <p class="about-tl-year">1995 — The Beginning</p>
+                    <p class="about-tl-text">The story of HEMASUTO began in 1995 in Baguio City, founded by the late contractor Mr. Henry Mancol and his wife, Mrs. Susan Tonog. While the name is often mistaken for being Japanese, it is actually a meaningful tribute to its founders, derived from the first two letters of their names. In these early years, the company established its foundation by registering with the Department of Trade and Industry and focusing its operations on essential services such as riprap works, steel fabrication, and house renovations.</p>
+                </div>
+                <div class="about-tl-item">
+                    <div class="about-tl-dot"></div>
+                    <p class="about-tl-year">2003–2006 — Growth Phase</p>
+                    <p class="about-tl-text">A significant transition occurred in 2003 when the family returned to Calbayog City due to Mr. Mancol's declining health. Following his passing in 2006, his eldest son, Mr. Henry Sharky T. Mancol, stepped forward to carry on his father's dream. This period was defined by resilience; Sharky navigated various challenges by launching ARSTEEL, a steel fabrication venture that sustained the family's entrepreneurial spirit for three years while laying the groundwork for a return to full-scale construction.</p>
+                </div>
+                <div class="about-tl-item">
+                    <div class="about-tl-dot"></div>
+                    <p class="about-tl-year">2007–2009 — Milestone</p>
+                    <p class="about-tl-text">The company's true breakthrough arrived when Sharky was awarded his first interior design project. This success served as a pivotal turning point, opening doors to broader opportunities in residential construction and layout development. To mark this new era of professional growth and to honor the original vision of building elegant homes, the business was officially revived and strengthened under the modified name HEMASUTO BUILDERS.</p>
+                </div>
+                <div class="about-tl-item">
+                    <div class="about-tl-dot"></div>
+                    <p class="about-tl-year">2010–2012 — Innovation</p>
+                    <p class="about-tl-text">Between 2010 and 2012, the firm redefined the local architectural landscape by introducing Italian-inspired residential designs to Calbayog City. What began as a single house extension project quickly became a local sensation, with residents and prominent individuals praising the remarkable elegance of the work. By 2013, this reputation for sophisticated design triggered a major surge in demand, allowing the company to secure increasingly prestigious projects and solidify its status as a premier builder.</p>
+                </div>
+                <div class="about-tl-item">
+                    <div class="about-tl-dot active"></div>
+                    <p class="about-tl-year">2026 — Present</p>
+                    <p class="about-tl-text">Today, HEMASUTO BUILDERS stands as a testament to a father's vision and a son's determination. The organization has evolved into a disciplined, values-oriented firm that continues to reach new heights within the construction industry. With a momentum that expands year after year, the company remains dedicated to excellence, operating without limitations or boundaries as it shapes the skyline of its community. — guided by: <em class="about-tl-em">"Your Dream House, We Build."</em></p>
+                </div>
+            </div>
+        </div>
+        <!-- ④ ORG CHART -->
+        <div class="about-section">
+            <div class="about-section-head">
+                <div class="about-section-bar"></div>
+                <div>
+                    <p class="about-section-label">Meet the Team</p>
+                    <h2 class="about-section-title">Organizational Chart</h2>
+                </div>
+            </div>
+            <div class="org-wrap">
+                <div class="org-card org-top">
+                    <div class="org-photo org-lg">
+                        <img src="" alt="Owner" onerror="this.style.display='none'">
+                        <svg class="org-fallback" width="36" height="36" fill="#555" viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+                    </div>
+                    <p class="org-name org-name-lg">[ Henry Sharky T. Mancol ]</p>
+                    <p class="org-role org-role-lg">Owner / CEO</p>
+                </div>
+                <div class="org-vline"></div>
+                <div class="org-hline" style="width:min(580px,90vw)"></div>
+                <div class="org-row">
+                    <div class="org-col"><div class="org-vline"></div><div class="org-card org-mid"><div class="org-photo org-md"><img src="" alt="" onerror="this.style.display='none'"><svg class="org-fallback" width="28" height="28" fill="#555" viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg></div><p class="org-name org-name-md">[ Name ]</p><p class="org-role org-role-md">Project Manager</p></div></div>
+                    <div class="org-col"><div class="org-vline"></div><div class="org-card org-mid"><div class="org-photo org-md"><img src="" alt="" onerror="this.style.display='none'"><svg class="org-fallback" width="28" height="28" fill="#555" viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg></div><p class="org-name org-name-md">[ Name ]</p><p class="org-role org-role-md">Lead Architect</p></div></div>
+                    <div class="org-col"><div class="org-vline"></div><div class="org-card org-mid"><div class="org-photo org-md"><img src="" alt="" onerror="this.style.display='none'"><svg class="org-fallback" width="28" height="28" fill="#555" viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg></div><p class="org-name org-name-md">[ Name ]</p><p class="org-role org-role-md">Civil Engineer</p></div></div>
+                </div>
+                <div class="org-vline"></div>
+                <div class="org-hline" style="width:min(720px,95vw)"></div>
+                <div class="org-row">
+                    <div class="org-col"><div class="org-vline org-vline-sm"></div><div class="org-card org-bot"><div class="org-photo org-sm"><img src="" alt="" onerror="this.style.display='none'"><svg class="org-fallback" width="24" height="24" fill="#555" viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg></div><p class="org-name org-name-sm">[ Name ]</p><p class="org-role org-role-sm">Site Foreman</p></div></div>
+                    <div class="org-col"><div class="org-vline org-vline-sm"></div><div class="org-card org-bot"><div class="org-photo org-sm"><img src="" alt="" onerror="this.style.display='none'"><svg class="org-fallback" width="24" height="24" fill="#555" viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg></div><p class="org-name org-name-sm">[ Name ]</p><p class="org-role org-role-sm">Estimator</p></div></div>
+                </div>
+            </div>
+            <p class="org-note">✏️ Replace each <code>src=""</code> with your photo path (e.g. <code>src="photos/owner.jpg"</code>) and update all [ Name ] / role labels.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Messenger bubble -->
+<a href="https://m.me/hemasutobuilderscalbayog" target="_blank" class="messenger-bubble">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.477 2 2 6.145 2 11.258c0 2.908 1.462 5.503 3.746 7.215v3.527a.5.5 0 0 0 .734.442l3.905-2.146c.52.144 1.059.22 1.615.22 5.523 0 10-4.145 10-9.258S17.523 2 12 2zm1.143 11.536l-2.428-2.589-4.73 2.589 5.204-5.526 2.428 2.59 4.73-2.59-5.204 5.526z"/></svg>
+</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>
