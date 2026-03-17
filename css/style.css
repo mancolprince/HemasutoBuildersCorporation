@@ -9,7 +9,7 @@
     position: fixed;
     inset: 0;
     z-index: 99999;
-    background: #FFFFFF;
+    background:#000000FF;
     display: flex;
     flex-direction: column;
     align-items: center;
